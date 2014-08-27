@@ -13,7 +13,6 @@ import org.springframework.data.rest.webmvc.config.RepositoryRestMvcConfiguratio
  * @author Dimi
  */
 @Configuration
-@Import(RepositoryRestMvcConfiguration.class)
 public class RestRepositoriesConfig extends RepositoryRestMvcConfiguration {
     /*
      * (non-Javadoc)
@@ -47,5 +46,5 @@ public class RestRepositoriesConfig extends RepositoryRestMvcConfiguration {
         return new AgentEventHandler();
     }
 
-    
+
 }
