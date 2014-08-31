@@ -29,7 +29,7 @@ import org.springframework.web.context.WebApplicationContext;
 @WebAppConfiguration
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringApplicationConfiguration(classes = Application.class)
-public class TestRepositoryEventHandler {
+public class RepositoryEventHandlerTest {
 
     @Autowired
     AgentRepository agentRepository;
