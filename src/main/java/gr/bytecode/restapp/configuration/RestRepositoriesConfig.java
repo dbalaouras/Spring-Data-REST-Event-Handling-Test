@@ -3,7 +3,6 @@ package gr.bytecode.restapp.configuration;
 import java.net.URI;
 import java.net.URISyntaxException;
 
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.rest.core.config.RepositoryRestConfiguration;
 import org.springframework.data.rest.webmvc.config.RepositoryRestMvcConfiguration;
@@ -31,19 +30,5 @@ public class RestRepositoriesConfig extends RepositoryRestMvcConfiguration {
             e.printStackTrace();
         }
     }
-
-    /**
-     * Declare an instance of the {@link AgentEventHandler}
-     *
-     * @return
-     */
-    @Bean
-    AgentEventHandler agentEvenHandler() {
-
-        System.out.println("Registering");
-
-        return new AgentEventHandler();
-    }
-
 
 }
