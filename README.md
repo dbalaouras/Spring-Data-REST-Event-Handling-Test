@@ -1,4 +1,4 @@
-test-spring-data-rest-eventhandlers
+Spring Data REST Event Handling Test
 ===================================
 
-Simple Spring Boot application, utilizing the Spring Data REST project and it's @BeforeCreate event handlers
+Simple Spring Boot application, utilizing the Spring Data REST project and it's @HandleBeforeCreate event handlers
