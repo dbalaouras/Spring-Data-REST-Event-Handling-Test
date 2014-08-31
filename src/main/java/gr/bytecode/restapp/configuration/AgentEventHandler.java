@@ -2,7 +2,7 @@ package gr.bytecode.restapp.configuration;
 
 import gr.bytecode.restapp.model.Agent;
 
-import org.springframework.data.rest.core.annotation.HandleBeforeSave;
+import org.springframework.data.rest.core.annotation.HandleBeforeCreate;
 import org.springframework.data.rest.core.annotation.RepositoryEventHandler;
 import org.springframework.data.rest.core.event.AbstractRepositoryEventListener;
 import org.springframework.stereotype.Component;
@@ -22,7 +22,7 @@ public class AgentEventHandler extends AbstractRepositoryEventListener<Agent> {
      * 
      * @param agent
      */
-    @HandleBeforeSave
+    @HandleBeforeCreate
     public void handleBeforeSave(Agent agent) {
 
         agent.setName(NEW_NAME);
